@@ -22,7 +22,7 @@ class sorveteria {
         System.out.println(" ----- Informações do produto -----");
         System.out.println("Nome: " + nome_produto);
         System.out.printf("Quantidade em estoque: " + quantidade_produto);
-        System.out.printf("\nPreço unitário: R$%.2f%n", preco_unitario);
+        System.out.printf("\nPreço unitário: %.2f%n", preco_unitario);
         scanner.close();
     }
 
@@ -40,4 +40,15 @@ class sorveteria {
 
         return quantidade;
     }
+
+    public static void exibirMenu() {
+        System.out.println("------------------------------");
+        System.out.println("        MENU DE ESTOQUE       ");
+        System.out.println("------------------------------");
+        System.out.println("1. Adicionar novo produto");
+        System.out.println("2. Listar produtos em estoque");
+        System.out.println("3. Sair");
+        System.out.println("------------------------------");
+    }
+
 }
